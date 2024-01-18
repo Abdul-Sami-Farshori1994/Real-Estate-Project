@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ tenant.name }} Details</title>
+</head>
+<body>
+    <h1>{{ tenant.name }} Details</h1>
+    <p>Address: {{ tenant.address }}</p>
+    <p>Unit: {{ tenant.unit.unit_type }} - Rent: {{ tenant.unit.rent_cost }}</p>
+    <p>Agreement End Date: {{ tenant.agreement_end_date }}</p>
+    <p>Monthly Rent Date: {{ tenant.monthly_rent_date }}</p>
+    <!-- Add other tenant details as needed -->
+</body>
+</html>

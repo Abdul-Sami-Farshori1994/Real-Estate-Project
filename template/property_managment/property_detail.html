@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ property.name }} Details</title>
+</head>
+<body>
+    <h1>{{ property.name }} Details</h1>
+    <p>Address: {{ property.address }}</p>
+    <h2>Units:</h2>
+    <ul>
+        {% for unit in units %}
+            <li>{{ unit.unit_type }} - Rent: {{ unit.rent_cost }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
